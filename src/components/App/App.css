@@ -1,0 +1,5 @@
+.app__search-block{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}

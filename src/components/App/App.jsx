@@ -113,12 +113,6 @@ export default class App extends Component{
           return items
       }
     }
-  
-
-
- 
-
-  
 
   render(){
 
@@ -132,10 +126,12 @@ export default class App extends Component{
     return (
       <>
         <Header done = {doneCount} toDo = {todoCount}/>
-        <SearchPanel onSearchChange={this.onSearchChange}/>  
-        <ItemStatusFilter 
-          filter = {filter}
-          onFilterChange ={this.onFilterChange}/>
+        <div className='app__search-block'>
+          <SearchPanel onSearchChange={this.onSearchChange}/>  
+          <ItemStatusFilter 
+            filter = {filter}
+            onFilterChange ={this.onFilterChange}/>
+        </div>
         <TodoList 
           onDeleted= {this.deleteItem} 
           todos ={visibleItems}

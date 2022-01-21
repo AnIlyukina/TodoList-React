@@ -23,8 +23,8 @@ export default class TodoListItem extends Component{
         onClick ={onToggleDone}
         className={className}
         >{label}</span>
-        <button onClick ={onToggleImportant}> Важно</button>
-        <button onClick ={onDeleted}> Удалить</button>
+        <button className="button" onClick ={onToggleImportant}> Важно</button>
+        <button className="button"  onClick ={onDeleted}> Удалить</button>
       </section>
     )
   }
