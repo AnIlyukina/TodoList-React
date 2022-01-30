@@ -1,4 +1,6 @@
-.todolist {
-  text-align: center;
+.todo-list{
+  margin: 20px 0;
+  list-style-type: none;
+  padding: 0;
 }
 

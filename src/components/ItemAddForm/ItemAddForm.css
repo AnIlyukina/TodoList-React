@@ -1,4 +1,7 @@
-.add-form{
-  max-width: 1000px;
-  display: flex;
+.form-add{
+
+}
+
+.form-add__text{
+  margin: 0;
 }

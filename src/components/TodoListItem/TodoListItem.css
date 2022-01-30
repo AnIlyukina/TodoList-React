@@ -1,8 +1,52 @@
+.item{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  margin-bottom: 5px;
+  background-color: rgba(219, 213, 213, 0.185);
+  box-shadow: -5px -5px 4px 0px rgba(34, 60, 80, 0.1);
+}
+
+.item__text{
+  margin: 0;
+  padding-left: 10px;
+}
+
+
+.item__buttons{
+  display: flex;
+  align-items: center;
+}
+
+.item__button{
+  display: inline-block;	
+	box-sizing: border-box;
+  border: none;
+  padding: 10px;
+	text-decoration: none;
+	background-color: transparent;
+	cursor: pointer;
+  margin-right: 15px;
+  background-position: center;
+  background-size: cover;
+}
+
+.item__button_type_important{
+  background-image: url('../../images/important.png');
+}
+
+.item__button_type_delete{
+  background-image: url('../../images/delete.png');
+}
+
+.item__button:hover {
+	cursor: pointer;
+}
+
 .done{
   text-decoration: line-through;
 }
 
 .important{
-  color:  red;
-  font-weight: 'bold';
+  color:  rgb(255, 0, 0);
 }

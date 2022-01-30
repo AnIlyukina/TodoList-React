@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 
+import './ItemAddForm.css'
+
 export default class ItemAddForm extends Component{
 
 
@@ -22,10 +24,11 @@ export default class ItemAddForm extends Component{
   render(){
 
     return(
-      <section>
-        <form className="add-form" onSubmit={this.onSubmit}>
+      <section className="form-add">
+        <p className="form-add__text">Add to the todo list</p>
+        <form onSubmit={this.onSubmit}>
           <input className ='input' onChange= {this.onLabelChange} value ={this.state.label} type='text' placeholder="Что изволите Госпожа"/>
-          <button className="animation">Сохранить</button>
+          <button className="animation">Add item</button>
         </form>
       </section>
     )

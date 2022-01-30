@@ -27,7 +27,7 @@ function TodoList({todos, onDeleted, onToggleImportant,onToggleDone}) {
 
   return (
     <>
-      <ul>
+      <ul className='todo-list'>
        {elements}
       </ul>
     </>

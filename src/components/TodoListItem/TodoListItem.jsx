@@ -11,20 +11,26 @@ export default class TodoListItem extends Component{
 
     let className = ''
     if(done){
-      className += 'done'
+      className += ' done'
     }
     if(important){
-      className+= ' important'
+      className += ' important'
     }
 
     return(
-      <section>
-        <span 
+      <section className="item">
+        <p 
         onClick ={onToggleDone}
-        className={className}
-        >{label}</span>
-        <button className="button" onClick ={onToggleImportant}> Важно</button>
-        <button className="button"  onClick ={onDeleted}> Удалить</button>
+        className={`item__text ${className}`}
+        >{label}</p>
+        <div className="item__buttons">
+          <button 
+            className="item__button item__button_type_important" 
+            onClick ={onToggleImportant}></button>
+          <button 
+            className="item__button item__button_type_delete"  
+            onClick ={onDeleted}></button>
+        </div>
       </section>
     )
   }

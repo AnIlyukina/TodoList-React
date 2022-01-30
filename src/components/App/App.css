@@ -1,5 +1,10 @@
 .app{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 600px;
+  max-width: 500px;
+  width: 100%;
   background: linear-gradient(90deg, rgba(253,149,120,1) 32%, rgba(253,132,120,0.8) 86%);
   padding: 40px;
   color: white;

@@ -125,17 +125,19 @@ export default class App extends Component{
 
     return (
       <div className='app'>
-        <Header done = {doneCount} toDo = {todoCount}/>
+        <div>
+          <Header done = {doneCount} toDo = {todoCount}/>
           <SearchPanel onSearchChange={this.onSearchChange}/>  
           <ItemStatusFilter 
             filter = {filter}
             onFilterChange ={this.onFilterChange}/>
-        <TodoList 
-          onDeleted= {this.deleteItem} 
-          todos ={visibleItems}
-          onToggleImportant = {this.onToggleImportant} 
-          onToggleDone = {this.onToggleDone}
-          />
+          <TodoList 
+            onDeleted= {this.deleteItem} 
+            todos ={visibleItems}
+            onToggleImportant = {this.onToggleImportant} 
+            onToggleDone = {this.onToggleDone}
+            />
+        </div>
         <ItemAddForm onAddItem = {this.addItem}/>
       </div>
     );
