@@ -4,9 +4,9 @@ import './ItemStatusFilter.css'
 export default class ItemStatusFilter extends Component{
 
   button = [
-    {name:'all', label:'Все задачи'},
-    {name:'active', label:'Оставшиеся'},
-    {name:'done', label:'Выполнено'}
+    {name:'all', label:'All'},
+    {name:'active', label:'Active'},
+    {name:'done', label:'Done'}
   ]
 
   render(){
@@ -18,7 +18,13 @@ export default class ItemStatusFilter extends Component{
       const isActive = filter === name
       const classActive = isActive ? 'active' : ''
       return(
-        <button onClick = {() => onFilterChange(name)} className = {`animation ${classActive}` } key = {name} type = 'button'> {label}</button>
+        <button 
+          onClick = {() => onFilterChange(name)} 
+          className = {`item-filter__button ${classActive}` } 
+          key = {name} 
+          type = 'button'> 
+            {label}
+        </button>
       )
     });
 
