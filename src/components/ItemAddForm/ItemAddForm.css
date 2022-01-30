@@ -1,7 +1,28 @@
-.form-add{
+.add-item{
+  width: 100%;
+}
+
+.add-item__text{
+  margin: 0;
+}
+
+.add-item__form{
+  display: flex;
+}
+
+.add-item__input{
+  flex:1;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
 
 }
 
-.form-add__text{
-  margin: 0;
+.add-item__button{
+  border: 1px solid rgb(255, 255, 255);;
+  color: white;
+  background-color: transparent;
+  padding: 9px;
+  margin-left: 10px;
 }

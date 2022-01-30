@@ -24,11 +24,11 @@ export default class ItemAddForm extends Component{
   render(){
 
     return(
-      <section className="form-add">
-        <p className="form-add__text">Add to the todo list</p>
-        <form onSubmit={this.onSubmit}>
-          <input className ='input' onChange= {this.onLabelChange} value ={this.state.label} type='text' placeholder="Что изволите Госпожа"/>
-          <button className="animation">Add item</button>
+      <section className="add-item">
+        <p className="add-item__text">Add to the todo list</p>
+        <form className="add-item__form" onSubmit={this.onSubmit}>
+          <input className ='add-item__input' onChange= {this.onLabelChange} value ={this.state.label} type='text'/>
+          <button className="add-item__button">Add item</button>
         </form>
       </section>
     )
