@@ -1,5 +1,10 @@
-.app__search-block{
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
+.app{
+  max-width: 500px;
+  height: 600px;
+  background: linear-gradient(90deg, rgba(253,149,120,1) 32%, rgba(253,132,120,0.8) 86%);
+  padding: 40px;
+  color: white;
+  box-shadow: -20px -20px 4px 0px rgba(34, 60, 80, 0.1);
+  border-radius: 0px 40px 0px 40px;
 }
+

@@ -15,7 +15,7 @@ export default class SearchPanel extends Component{
   render(){
     return(
       <section className="search">
-        <input className="search__input" type = 'text'  value ={this.state.term} onChange ={this.onSearchChange} placeholder="Тут поиск госпожа"/>
+        <input className="input" type = 'text'  value ={this.state.term} onChange ={this.onSearchChange} placeholder="Тут поиск госпожа"/>
       </section>
     )
   }

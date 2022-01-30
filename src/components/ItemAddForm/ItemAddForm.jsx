@@ -23,9 +23,9 @@ export default class ItemAddForm extends Component{
 
     return(
       <section>
-        <form onSubmit={this.onSubmit}>
-          <input onChange= {this.onLabelChange} value ={this.state.label} type='text' placeholder="Что изволите Госпожа"/>
-          <button>Сохранить</button>
+        <form className="add-form" onSubmit={this.onSubmit}>
+          <input className ='input' onChange= {this.onLabelChange} value ={this.state.label} type='text' placeholder="Что изволите Госпожа"/>
+          <button className="animation">Сохранить</button>
         </form>
       </section>
     )

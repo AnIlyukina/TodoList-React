@@ -124,14 +124,12 @@ export default class App extends Component{
 
 
     return (
-      <>
+      <div className='app'>
         <Header done = {doneCount} toDo = {todoCount}/>
-        <div className='app__search-block'>
           <SearchPanel onSearchChange={this.onSearchChange}/>  
           <ItemStatusFilter 
             filter = {filter}
             onFilterChange ={this.onFilterChange}/>
-        </div>
         <TodoList 
           onDeleted= {this.deleteItem} 
           todos ={visibleItems}
@@ -139,7 +137,7 @@ export default class App extends Component{
           onToggleDone = {this.onToggleDone}
           />
         <ItemAddForm onAddItem = {this.addItem}/>
-      </>
+      </div>
     );
   }
 }
